@@ -5,7 +5,7 @@ powr <- read.csv("./household_power_consumption.txt", sep=";", skip = "?", strin
 datedownloaded <- date()
 datedownloaded
 
-#Annotate data
+#Annotate dataset
 powr2 <- powr[66637:69516,] ##Only need rows 2007-02-01 and 2007-02-02
 
 #Create Plot1
