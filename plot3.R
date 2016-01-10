@@ -21,7 +21,8 @@ with(powr, plot(y1, xlab = "", ylab = "Energy sub metering", xaxt = "n", type = 
 lines(y2, type = "l", col = "red")
 lines(y3, type = "l", col = "blue")
 axis(1, at = c(1, 1500, 2900), labels = c("Tue", "Fri", "Sat"))
-legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = c(1, 1, 1), bty = "n", lwd = c(1.5,1.5,1.5), col = c("black","blue","red"))
+par(new=FALSE)
+legend(1900, 40.5, c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = c(1, 1, 1), bty = "n", lwd = c(1.5,1.5,1.5), col = c("black","blue","red"))
 
 #Save Plot3 png
 dev.copy(png, filename="plot3.png", width=480, height=480)
